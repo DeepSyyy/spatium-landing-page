@@ -989,23 +989,36 @@
 
       @media (max-width: 768px) {
         nav {
-          padding: 12px 20px;
-          gap: 20px;
+          width: calc(100% - 32px);
+          padding: 10px 16px;
+          gap: 16px;
+          justify-content: space-between;
         }
 
         .nav-links {
           display: none;
         }
 
+        .logo {
+          font-size: 20px;
+        }
+
+        .btn-start {
+          padding: 10px 18px;
+          font-size: 0.9rem;
+        }
+
         .hero {
           flex-direction: column;
           padding-top: 120px;
           text-align: center;
+          min-height: auto;
+          padding-bottom: 80px;
         }
 
         .hero-content {
           max-width: 100%;
-          padding: 0 20px;
+          padding: 32px 24px;
         }
 
         .hero-content h1 {
@@ -1025,6 +1038,118 @@
         .cta-group {
           justify-content: center;
           flex-wrap: wrap;
+        }
+
+        .section {
+          padding: 90px 8%;
+        }
+
+        .section-header h2 {
+          font-size: 2.1rem;
+        }
+
+        .section-header p {
+          font-size: 1rem;
+        }
+
+        .features-grid,
+        .testimonials-grid {
+          grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        }
+
+        .steps-container {
+          gap: 32px;
+        }
+
+        .step {
+          max-width: 320px;
+        }
+
+        footer {
+          padding: 50px 8% 24px;
+        }
+      }
+
+      @media (max-width: 540px) {
+        nav {
+          top: 12px;
+          border-radius: 18px;
+        }
+
+        .hero {
+          padding: 110px 6% 70px;
+        }
+
+        .hero-content h1 {
+          font-size: 1.9rem;
+        }
+
+        .hero-content p {
+          font-size: 1rem;
+        }
+
+        .features-hint {
+          display: none;
+        }
+
+        .btn-primary {
+          width: 100%;
+          justify-content: center;
+        }
+
+        .btn-secondary {
+          width: 100%;
+          justify-content: center;
+        }
+
+        .section {
+          padding: 80px 6%;
+        }
+
+        .feature-card {
+          padding: 32px 24px;
+        }
+
+        .cta-section h2 {
+          font-size: 2.2rem;
+        }
+
+        .cta-section > .section-header p,
+        .cta-content p {
+          font-size: 1rem;
+        }
+
+        .cta-buttons {
+          width: 100%;
+        }
+
+        .btn-download {
+          width: 100%;
+          justify-content: center;
+        }
+
+        .footer-content {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+
+      @media (max-width: 400px) {
+        .hero-content h1 {
+          font-size: 1.7rem;
+        }
+
+        .logo {
+          font-size: 18px;
+        }
+
+        .btn-start {
+          padding: 8px 14px;
+          font-size: 0.85rem;
+        }
+
+        .section-header h2 {
+          font-size: 1.9rem;
         }
       }
     </style>
